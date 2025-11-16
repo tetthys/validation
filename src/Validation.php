@@ -9,7 +9,7 @@ abstract class Validation
     public function validate(string $field, ...$params): void
     {
         if ($this->isInvalid(...$params)) {
-            ($this->validationErrorHandler->errorCallback)($field);
+            ($this->validationErrorHandler->getErrorCallback())($field);
         }
     }
 
