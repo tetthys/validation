@@ -15,7 +15,7 @@ abstract class Validation
 
     abstract protected function isValid(...$params): bool;
 
-    protected function isInvalid(...$params): bool
+    public function isInvalid(...$params): bool
     {
         return ! $this->isValid(...$params);
     }
