@@ -1,0 +1,14 @@
+{
+    "name": "tetthys/validation",
+    "description": "A simple validation abstract class for general purposes.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Tetthys\\Validation\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.4"
+    }
+}
